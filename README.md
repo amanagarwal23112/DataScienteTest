@@ -1,6 +1,6 @@
 # DataScienceTest- Daltix
 
-#Libraries used
+# Libraries used
 1. Numpy: Numpy is free and open-source Python library used for scientific computing and technical computing.
 2. pandas: Pandas is a software library written for the Python programming language for data manipulation and analysis.
 3. Smart_open: 
