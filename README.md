@@ -20,11 +20,11 @@
 # Approach
 * In this test I first thought to match daltix_id, if product id is same. While working on data I also realised that every first word in name is mostly the brand name, it helps me to fill the missing values in Brand Column.
 
-* After observing the y_true file i also realised that product id match is one factor but brand name should also be another factor while matching the daltix id. After applying both the condition 27213 are true and 3238 are incorrect matches.
+* After observing the y_true file I also realised that product id match is one factor but brand name should also be another factor while matching the daltix id. After applying both the condition 27213 are true and 3238 are incorrect matches.
 
-* Then i took name column, apply Term Frequency - inverse document frequency & Cosine similarity to find the similarity between the names. After that it creates a huge sparse matrix, to handle such huge matrix then I have reduced the memory usage by changing the data type to float16 and convert it to a dense matrix.
+* Then I took name column, apply Term Frequency - inverse document frequency & Cosine similarity to find the similarity between the names. After that it creates a huge sparse matrix, to handle such huge matrix then I have reduced the memory usage by changing the data type to float16 and convert it to a dense matrix.
 
-* Create a new data set and add daltix_id corresponds to columns like brand, name & shop along with the cosine distance. Then i apply a condition with the approach that a particular product with same brand can be available in different shops.
+* Create a new data set and add daltix_id corresponds to columns like brand, name & shop along with the cosine distance. Then I apply a condition with the approach that a particular product with same brand can be available in different shops.
 
 * Evaluate the result with F1 Score by taking the multiple distances - between 0.3 to 0.9.
 
