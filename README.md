@@ -1,11 +1,11 @@
 # DataScienceTest- Daltix
 
 #Libraries used
-Numpy: Numpy is free and open-source Python library used for scientific computing and technical computing.
-pandas: Pandas is a software library written for the Python programming language for data manipulation and analysis.
-Smart_open: 
-Stop_words:
-Sklearn: Machine learning library for the Python programming language.
+1. Numpy: Numpy is free and open-source Python library used for scientific computing and technical computing.
+2. pandas: Pandas is a software library written for the Python programming language for data manipulation and analysis.
+3. Smart_open: 
+4. Stop_words:
+5. Sklearn: Machine learning library for the Python programming language.
 
 
 #Approach
