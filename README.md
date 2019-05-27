@@ -11,6 +11,8 @@
 #Approach
 1. In this test I first thought to match daltix_id if product id is same.While working on data i also realised that Every first word in name is mostly the brand name, it helps me to fill the missing values in Brand Column.
 
-1. Start with crunching the data by matching Daltix id by Prduct Id
-2. After observing the data - Every first word in name is mostly the brand name
-3. Remove Stop words - Dutch
+2. After observing the y_true file i also realised that product id match is one factor but brand name should also be another factor while matching the daltix id.After applying both the condition 27213 are true and 3238 are incorrect matches.
+
+3. Then i approach to name column, apply Term Frequency - inverse document frequency & Cosine similarity to find the similarity between the names. Then it created a huge sparse matrix. To handle such huge matrix i have reduce the memory usage by converting the data type to float16.
+
+4. 
