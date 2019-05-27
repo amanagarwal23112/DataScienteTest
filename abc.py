@@ -116,19 +116,15 @@ final['brand_id_1'] = final.daltix_id_1.apply( lambda x: new_daltix.iloc[x]['BRA
 final['brand_id_2'] = final.daltix_id_2.apply( lambda x: new_daltix.iloc[x]['BRAND'])
 final['name_id_1'] = final.daltix_id_1.apply( lambda x: new_daltix.iloc[x]['NAME'])
 final['name_id_2'] = final.daltix_id_2.apply( lambda x: new_daltix.iloc[x]['NAME'])
-final['store_id_1'] = final.daltix_id_1.apply( lambda x: new_daltix.iloc[x]['SHOP'])
-final['store_id_2'] = final.daltix_id_2.apply( lambda x: new_daltix.iloc[x]['SHOP'])
+final['shop_id_1'] = final.daltix_id_1.apply( lambda x: new_daltix.iloc[x]['SHOP'])
+final['shop_id_2'] = final.daltix_id_2.apply( lambda x: new_daltix.iloc[x]['SHOP'])
 final['digits_id_1'] = final.name_id_1.apply(func)
 final['digits_id_2'] = final.name_id_2.apply(func)
 print(final['digits_id_1'])
 
 # filter the data with some conditions
-final = final[(final.brand_id_1 == final.brand_id_2) & (final['store_id_1'] != final['store_id_2'])]
+final = final[(final.brand_id_1 == final.brand_id_2) & (final['shop_id_1'] != final['shop_id_2'])]
 final = final[(final.digits_id_1 == final.digits_id_2) | (len(final.digits_id_1) == 0) | (len(final.digits_id_2) == 0)]
-
-# if dist > 0.8 than conactenate the three dataset then observe the dataset
-test1 = pd.concat([dist[['daltix_id_1','daltix_id_2']],final[['daltix_id_1','daltix_id_2']],matched_data])
-test1.to_csv('test1.csv')
 
 # Add dist column in matched_data
 def vec(daltix_id):
