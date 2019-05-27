@@ -18,7 +18,7 @@
 
 
 # Approach
-* In this test I first thought to match daltix_id if product id is same.While working on data i also realised that Every first word in name is mostly the brand name, it helps me to fill the missing values in Brand Column.
+* In this test I first thought match daltix_id if product id is same. While working on data i also realised that Every first word in name is mostly the brand name, it helps me to fill the missing values in Brand Column.
 
 * After observing the y_true file i also realised that product id match is one factor but brand name should also be another factor while matching the daltix id.After applying both the condition 27213 are true and 3238 are incorrect matches.
 
