@@ -21,7 +21,7 @@
 
 
 # Other Approaches which I had tried
-1. Sparse Matrix is so huge that it crashed my system multiple time, also while converting sparse matrix to dense matrix it throughs memory Error. I tried to run it in batches but again it crashed my system.
+Sparse Matrix is so huge that it crashed my system multiple time, also while converting sparse matrix to dense matrix it throughs memory Error. I tried to run it in batches but again it crashed my system.
 
 # Results
 
