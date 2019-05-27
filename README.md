@@ -29,8 +29,5 @@
 * Evaluate the result with F1 Score by taking the multiple distances - between 0.3 to 0.9.
 
 
-# Other Approaches which I had tried / Results
+# Results / Other Approaches which I had tried
 Sparse Matrix is so huge that it crashed my system multiple time, also while converting sparse matrix to dense matrix it throughs memory Error. I tried to run it in batches but again it crashed my system.
-
-# Results
-Failed to resolve the memory error while converting the sparse matrix to dense matrix.
